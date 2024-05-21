@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">madpractical5</string>
+    <string name="mad_practical">MAD Practical</string>
+    <string name="Hello">Hello World!</string>
+    <string name="message">MESSAGE</string>
+    <string name="follow">FOLLOW</string>
+    <string name="lorem">Lorem ipsum donor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="grp1_fragment">Group 1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
