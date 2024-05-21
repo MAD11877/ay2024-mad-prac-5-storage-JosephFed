@@ -28,7 +28,7 @@ public class ListActivity extends AppCompatActivity {
             return insets;
         });
 
-        DataBaseHandler dbHandler = new DataBaseHandler(this,null, null, 1);
+        DatabaseHandler dbHandler = new DatabaseHandler(this,null, null, 1);
 
         //Creating recycler view
         UserAdapter userAdapter = new UserAdapter(dbHandler.getUsers(),this );

@@ -11,7 +11,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class DataBaseHandler extends SQLiteOpenHelper {
+public class DatabaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         Log.i("Database Operations","Creating a Table.");
@@ -66,9 +66,9 @@ public class DataBaseHandler extends SQLiteOpenHelper {
     public static final String COLUMN_USERNAME = "name";
     public static final String COLUMN_DESCRIPTION = "description";
     public static final String COLUMN_FOLLOWED = "followed";
-    public DataBaseHandler(Context context, String name,
-                     SQLiteDatabase.CursorFactory factory,
-                     int version)
+    public DatabaseHandler(Context context, String name,
+                           SQLiteDatabase.CursorFactory factory,
+                           int version)
     {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
         //context.deleteDatabase(DATABASE_NAME);
@@ -121,4 +121,3 @@ public class DataBaseHandler extends SQLiteOpenHelper {
         super.close();
     }
 }
-
