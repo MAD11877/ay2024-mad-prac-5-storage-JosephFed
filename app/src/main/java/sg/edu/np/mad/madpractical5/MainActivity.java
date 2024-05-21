@@ -36,7 +36,7 @@ public class  MainActivity extends AppCompatActivity {
         String name = receivingEnd.getStringExtra("Name");
         String description = receivingEnd.getStringExtra("Description");
 
-        DBHandler dbHandler = new DBHandler(this,null, null, 1);
+        DataBaseHandler dbHandler = new DataBaseHandler(this,null, null, 1);
         User user = dbHandler.getUser(name);
         //Set the TextViews with the User's name, description
         tvName.setText(name);

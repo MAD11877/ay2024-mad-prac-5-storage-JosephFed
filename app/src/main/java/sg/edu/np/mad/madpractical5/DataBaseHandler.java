@@ -7,12 +7,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import android.view.View;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class DBHandler extends SQLiteOpenHelper  {
+public class DataBaseHandler extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         Log.i("Database Operations","Creating a Table.");
@@ -67,9 +66,9 @@ public class DBHandler extends SQLiteOpenHelper  {
     public static final String COLUMN_USERNAME = "name";
     public static final String COLUMN_DESCRIPTION = "description";
     public static final String COLUMN_FOLLOWED = "followed";
-    public DBHandler(Context context, String name,
-                       SQLiteDatabase.CursorFactory factory,
-                       int version)
+    public DataBaseHandler(Context context, String name,
+                     SQLiteDatabase.CursorFactory factory,
+                     int version)
     {
         super(context, DATABASE_NAME, factory, DATABASE_VERSION);
         //context.deleteDatabase(DATABASE_NAME);
@@ -122,3 +121,4 @@ public class DBHandler extends SQLiteOpenHelper  {
         super.close();
     }
 }
+
